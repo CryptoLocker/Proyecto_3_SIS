@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CryptoLocker</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+    body {
+      background-image: linear-gradient(#000, #05080d);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed;
+      background-size: cover;
+      color: #00ff00;
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    h1 {
+      color: #00ff00;
+      margin-top: 50px;
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      font-size: 32px;
+    }
+
+    .photo {
+      margin: 0 auto 20px;
+      border: 2px solid #00ff00;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: left;
+      position: relative;
+      margin-top: 5px;
+    }
+
+    .caption {
+      font-style: italic;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .button {
+      background-color: #00ff00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .tamagotchi {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+    }
+
+    .image-container {
+      margin-bottom: 20px;
+      border: 2px solid #00ff00;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 200px;
+    }
+
+    .image-description {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .hacker-icon {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+    }
+
+    .back-button {
+      background-color: #00ff00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dodecahedron {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .dodecahedron:before,
+    .dodecahedron:after {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 90vmax; /* Ajusta el tamaño horizontal del tesseracto */
+      height: 90vmax; /* Ajusta el tamaño vertical del tesseracto */
+      background: linear-gradient(to bottom right, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0));
+      transform-origin: center center -10vmax; /* Ajusta la profundidad del tesseracto */
+      transform-style: preserve-3d;
+      animation: rotate 20s infinite linear;
+      filter: blur(10px);
+    }
+
+    .dodecahedron:after {
+      background: linear-gradient(to bottom right, rgba(0, 255, 0, 0), rgba(0, 255, 0, 0.5));
+      transform-origin: center center 100vmax; /* Ajusta la profundidad del tesseracto */
+      animation: rotate 30s infinite linear reverse;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-25%, -25%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      100% {
+        transform: translate(-25%, -25%) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="seccion1" class="section visible">
+    <div class="container">
+      <h1>PROYECTO 3</h1>
+
+      <div class="image-Focused">
+        <img src="HD-wallpaper-anonymous-hacker-matrix-green.jpg" alt="" width="245px" height="420">
+        <p class="caption">Este trabajo se centra en la resolución de problemas identificados en una base de datos. El objetivo principal es abordar y solucionar los desafíos relacionados con el almacenamiento, acceso y manipulación de datos en el sistema</p>
+      </div>
+
+      <img src="hack-hacker-unscreen.gif" alt=""width="110px" height="110">
+    </div>
+
+    <button class="button" onclick="mostrarSeccion('seccion2');">Ir a la segunda seccion</button>
+  </div>
+
+  <div id="seccion2" class="section">
+    <div class="container">
+      <h1>Respuestas a las preguntas formuladas </h1>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuál es el producto más vendido en una ubicación geográfica específica?</p>
+        <img src="imagen2.jpg" alt="Foto 2">
+      </div>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuántos clientes han comprado productos de un rango de precios específico?</p>
+        <img src="imagen3.jpg" alt="Foto 3">
+      </div>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuáles son los clientes más frecuentes en realizar compras y cuánto han gastado en total?</p>
+        <img src="imagen4.jpg" alt="Foto 4">
+      </div>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuál es el producto más vendido en cada ubicación geográfica?</p>
+        <img src="imagen5.jpg" alt="Foto 5">
+      </div>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuántas compras ha realizado cada cliente y cuánto ha gastado en total?</p>
+        <img src="imagen6.jpg" alt="Foto 6">
+      </div>
+
+      <div class="image-container">
+        <p class="image-description">¿Cuál es el cliente que ha gastado más dinero y cuánto ha gastado?</p>
+        <img src="imagen7.jpg" alt="Foto 7">
+      </div>
+
+      <button class="back-button" onclick="mostrarSeccion('seccion1');">Volver a la primera seccion</button>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(seccionId) {
+      var secciones = document.getElementsByClassName('section');
+      for (var i = 0; i < secciones.length; i++) {
+        secciones[i].classList.remove('visible');
+      }
+      document.getElementById(seccionId).classList.add('visible');
+    }
+  </script>
+
+  <div class="dodecahedron"></div>
+</body>
+</html>
